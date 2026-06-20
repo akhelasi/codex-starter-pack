@@ -110,3 +110,11 @@ The user wants Codex to manage GitHub setup, repositories, GitHub Pages, and fut
 - Created public GitHub repo `https://github.com/akhelasi/codex-test-page`.
 - Enabled GitHub Pages from `main` branch root.
 - Verified live URL: `https://akhelasi.github.io/codex-test-page/`.
+
+## 2026-06-20 - Starter Pack GitHub Repository
+
+- Added `scripts/install-starter-pack.ps1`.
+- Added `docs/clone-and-install.md`.
+- Published clean starter pack repo: `https://github.com/akhelasi/codex-starter-pack`.
+- Included `AGENTS.md`, `.agents`, `.codex`, `docs`, `templates`, and `scripts`.
+- Excluded generated `outputs` test projects and local cache files.
