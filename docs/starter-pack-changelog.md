@@ -139,3 +139,8 @@ The user wants Codex to manage GitHub setup, repositories, GitHub Pages, and fut
 - Added `Sensitive MCP Defaults` to `AGENTS.md`.
 - Recorded that production database, broad filesystem, Figma, Sentry, Slack, Drive, Notion, and similar private-workspace MCP servers should not be installed by default.
 - These MCPs should be enabled only for project-specific needs with user approval and narrow/read-only scopes where possible.
+
+## 2026-06-22 - Work Computer Setup Prompt
+
+- Added a work-computer setup prompt to `docs/clone-and-install.md`.
+- The prompt tells Codex how to clone `https://github.com/akhelasi/codex-starter-pack`, check Git/Node/GitHub CLI/Codex CLI, run the install script, and avoid sensitive MCP servers without approval.
