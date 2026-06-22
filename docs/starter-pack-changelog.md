@@ -118,3 +118,11 @@ The user wants Codex to manage GitHub setup, repositories, GitHub Pages, and fut
 - Published clean starter pack repo: `https://github.com/akhelasi/codex-starter-pack`.
 - Included `AGENTS.md`, `.agents`, `.codex`, `docs`, `templates`, and `scripts`.
 - Excluded generated `outputs` test projects and local cache files.
+
+## 2026-06-22 - Senior Codex Engineering Workflow
+
+- Added `.agents/skills/senior-web-engineer/SKILL.md`.
+- Added `.agents/skills/adversarial-code-review/SKILL.md`.
+- Added `docs/senior-codex-engineering-playbook.md`.
+- Adapted Karpathy/Claude Code agentic coding practices to Codex: explore, plan, implement, verify, review, and publish.
+- Kept MCP recommendations conservative: official docs, Context7, Playwright/browser, GitHub, Chrome DevTools, and local/dev database only when needed.
