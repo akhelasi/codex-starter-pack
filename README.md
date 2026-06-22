@@ -1,36 +1,66 @@
-﻿# Codex Starter Pack for Web Development
+# Codex Starter Pack for Web Development
 
-áƒ”áƒ¡ áƒ¡áƒáƒ¥áƒáƒ¦áƒáƒšáƒ“áƒ” áƒáƒ áƒ˜áƒ¡ áƒ¡áƒáƒ¬áƒ§áƒ˜áƒ¡áƒ˜ áƒžáƒáƒ™áƒ”áƒ¢áƒ˜ Codex-áƒ—áƒáƒœ áƒ£áƒ¤áƒ áƒ áƒ”áƒ¤áƒ”áƒ¥áƒ¢áƒ£áƒ áƒáƒ“ áƒ¡áƒáƒ›áƒ£áƒ¨áƒáƒáƒ“, áƒ’áƒáƒœáƒ¡áƒáƒ™áƒ£áƒ—áƒ áƒ”áƒ‘áƒ˜áƒ— HTML, CSS, JavaScript, PHP áƒ“áƒ SQL áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ”áƒ‘áƒ–áƒ”.
+This repository is a portable Codex starter pack for web projects using HTML, CSS, JavaScript, PHP, SQL, GitHub Pages, XAMPP, and PHP hosting.
 
-## áƒ áƒ áƒáƒ áƒ˜áƒ¡ áƒáƒ¥
+These files are not product code. They are working instructions, reusable skills, checklists, templates, MCP examples, and maintenance notes that help Codex work more like a senior web engineer.
 
-- `AGENTS.md` - áƒ«áƒ˜áƒ áƒ˜áƒ—áƒáƒ“áƒ˜ áƒ˜áƒœáƒ¡áƒ¢áƒ áƒ£áƒ¥áƒªáƒ˜áƒ, áƒ áƒáƒ›áƒ”áƒšáƒ˜áƒª áƒ¨áƒ”áƒ’áƒ˜áƒ«áƒšáƒ˜áƒ áƒ©áƒáƒáƒ’áƒ“áƒ áƒœáƒ”áƒ‘áƒ˜áƒ¡áƒ›áƒ˜áƒ”áƒ áƒ˜ áƒ•áƒ”áƒ‘-áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ˜áƒ¡ root-áƒ¨áƒ˜.
-- `.agents/skills/` - repo-scoped Codex skills áƒ™áƒáƒœáƒ™áƒ áƒ”áƒ¢áƒ£áƒšáƒ˜ workflow-áƒ”áƒ‘áƒ˜áƒ¡áƒ—áƒ•áƒ˜áƒ¡.
-- `.codex/config.example.toml` - MCP áƒ¡áƒ”áƒ áƒ•áƒ”áƒ áƒ”áƒ‘áƒ˜áƒ¡ áƒ áƒ”áƒ™áƒáƒ›áƒ”áƒœáƒ“áƒ”áƒ‘áƒ£áƒšáƒ˜ áƒ™áƒáƒœáƒ¤áƒ˜áƒ’áƒ£áƒ áƒáƒªáƒ˜áƒ˜áƒ¡ áƒœáƒ˜áƒ›áƒ£áƒ¨áƒ˜.
-- `docs/mcp-and-skills-research.md` - áƒ›áƒáƒ«áƒ˜áƒ”áƒ‘áƒ£áƒšáƒ˜ MCP/skill áƒ áƒ”áƒ™áƒáƒ›áƒ”áƒœáƒ“áƒáƒªáƒ˜áƒ”áƒ‘áƒ˜ áƒ“áƒ áƒ¬áƒ§áƒáƒ áƒáƒ”áƒ‘áƒ˜.
-- `docs/github-management.md` - GitHub/GitHub Pages áƒ›áƒáƒ áƒ—áƒ•áƒ˜áƒ¡ áƒ’áƒ”áƒ’áƒ›áƒ áƒ¨áƒ”áƒœáƒ˜ áƒ¡áƒ˜áƒ¢áƒ£áƒáƒªáƒ˜áƒ˜áƒ¡áƒ—áƒ•áƒ˜áƒ¡.
-- `docs/starter-pack-changelog.md` - áƒ áƒ áƒ¨áƒ”áƒ˜áƒªáƒ•áƒáƒšáƒ starter pack-áƒ¨áƒ˜ áƒ“áƒ áƒ áƒáƒ¢áƒáƒ›.
-- `docs/clone-and-install.md` - áƒ áƒáƒ’áƒáƒ  áƒ“áƒáƒ™áƒšáƒáƒœáƒ áƒ“áƒ áƒ“áƒáƒáƒ§áƒ”áƒœáƒ starter pack áƒ¡áƒ®áƒ•áƒ áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ¨áƒ˜.
-- `docs/senior-codex-engineering-playbook.md` - Senior Codex workflow and source-backed agentic coding guidance.
-- `docs/setup-checklist.md` - áƒ“áƒáƒ§áƒ”áƒœáƒ”áƒ‘áƒ˜áƒ¡ áƒ¡áƒ¬áƒ áƒáƒ¤áƒ˜ áƒœáƒáƒ‘áƒ˜áƒ¯áƒ”áƒ‘áƒ˜.
-- `templates/` - prompt-áƒ”áƒ‘áƒ˜áƒ¡áƒ áƒ“áƒ áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ˜áƒ¡ áƒ˜áƒœáƒ¡áƒ¢áƒ áƒ£áƒ¥áƒªáƒ˜áƒ”áƒ‘áƒ˜áƒ¡ áƒáƒ¡áƒšáƒ”áƒ‘áƒ˜.
+## Contents
 
-## áƒ áƒáƒ’áƒáƒ  áƒ’áƒáƒ›áƒáƒ˜áƒ§áƒ”áƒœáƒ
+- `AGENTS.md` - primary Codex instructions to copy into project roots.
+- `.agents/skills/` - reusable Codex skills for web development workflows.
+- `.codex/config.example.toml` - MCP configuration examples; not active until copied into real Codex config.
+- `docs/clone-and-install.md` - how to clone and install this pack into another project.
+- `docs/setup-checklist.md` - setup checklist for new projects.
+- `docs/github-management.md` - GitHub, GitHub Pages, XAMPP, and deployment guidance.
+- `docs/senior-codex-engineering-playbook.md` - senior workflow adapted from Codex and Claude Code/Karpathy-style agentic coding practices.
+- `docs/skills-mcp-security-review.md` - security review of recommended skills and MCP servers.
+- `docs/mcp-and-skills-research.md` - research notes and source links for MCP/skill choices.
+- `docs/file-maintenance-guide.md` - what to update in which file and when.
+- `docs/tooling-stability.md` - notes about patch/write stability issues and mitigation.
+- `docs/starter-pack-changelog.md` - history of meaningful starter-pack changes.
+- `templates/` - reusable project instruction and task brief templates.
+- `scripts/install-starter-pack.ps1` - installer script for copying the pack into a project.
 
-1. áƒáƒ®áƒáƒš áƒáƒœ áƒáƒ áƒ¡áƒ”áƒ‘áƒ£áƒš áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ¨áƒ˜ áƒ“áƒáƒáƒ™áƒáƒžáƒ˜áƒ áƒ” `AGENTS.md`.
-2. áƒ—áƒ£ áƒ’áƒ˜áƒœáƒ“áƒ áƒ™áƒáƒœáƒ™áƒ áƒ”áƒ¢áƒ£áƒšáƒ˜ skills áƒ˜áƒ› áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ¨áƒ˜áƒª áƒ˜áƒ›áƒ£áƒ¨áƒáƒáƒ¡, áƒ“áƒáƒáƒ™áƒáƒžáƒ˜áƒ áƒ” `.agents/skills`.
-3. `.codex/config.example.toml`-áƒ“áƒáƒœ áƒ›áƒ®áƒáƒšáƒáƒ“ áƒ¡áƒáƒ­áƒ˜áƒ áƒ MCP áƒ¡áƒ”áƒ áƒ•áƒ”áƒ áƒ”áƒ‘áƒ˜ áƒ’áƒáƒ“áƒáƒ˜áƒ¢áƒáƒœáƒ” áƒ¨áƒ”áƒœáƒ¡ `~/.codex/config.toml` áƒ¤áƒáƒ˜áƒšáƒ¨áƒ˜.
-4. MCP-áƒ”áƒ‘áƒ˜ áƒ©áƒáƒ áƒ—áƒ” áƒœáƒ”áƒšáƒ áƒ“áƒ áƒ›áƒ˜áƒ–áƒœáƒáƒ‘áƒ áƒ˜áƒ•áƒáƒ“: áƒ¯áƒ”áƒ  docs/browser/GitHub, áƒ¨áƒ”áƒ›áƒ“áƒ”áƒ’ áƒ›áƒáƒœáƒáƒªáƒ”áƒ›áƒ—áƒ áƒ‘áƒáƒ–áƒ áƒ›áƒ®áƒáƒšáƒáƒ“ read-only áƒ áƒ”áƒŸáƒ˜áƒ›áƒ˜áƒ—.
+## Install Into A Project
 
-## áƒ áƒ”áƒ™áƒáƒ›áƒ”áƒœáƒ“áƒ”áƒ‘áƒ£áƒšáƒ˜ áƒ›áƒ˜áƒœáƒ˜áƒ›áƒ£áƒ›áƒ˜
+Clone the starter pack:
 
-- `AGENTS.md` áƒ§áƒ•áƒ”áƒšáƒ áƒ•áƒ”áƒ‘-áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ¨áƒ˜.
-- Context7 áƒáƒœ OpenAI Docs MCP áƒ“áƒáƒ™áƒ£áƒ›áƒ”áƒœáƒ¢áƒáƒªáƒ˜áƒ˜áƒ¡áƒ—áƒ•áƒ˜áƒ¡.
-- Playwright MCP áƒáƒœ Codex in-app browser áƒ¤áƒ áƒáƒœáƒ¢áƒ”áƒœáƒ“áƒ˜áƒ¡ áƒ¨áƒ”áƒ¡áƒáƒ›áƒáƒ¬áƒ›áƒ”áƒ‘áƒšáƒáƒ“.
-- GitHub MCP áƒ›áƒ®áƒáƒšáƒáƒ“ áƒ›áƒáƒ¨áƒ˜áƒœ, áƒ áƒáƒªáƒ issues/PR/actions-áƒ—áƒáƒœ áƒ›áƒ£áƒ¨áƒáƒáƒ‘áƒ áƒ’áƒ˜áƒœáƒ“áƒ.
-- DB MCP áƒ›áƒ®áƒáƒšáƒáƒ“ dev/read-only áƒ‘áƒáƒ–áƒ”áƒ‘áƒ–áƒ”.
-- GitHub Pages static áƒ¡áƒáƒ˜áƒ¢áƒ”áƒ‘áƒ˜áƒ¡áƒ—áƒ•áƒ˜áƒ¡; PHP áƒ¡áƒáƒ˜áƒ¢áƒ”áƒ‘áƒ˜áƒ¡áƒ—áƒ•áƒ˜áƒ¡ GitHub áƒ’áƒáƒ›áƒáƒ˜áƒ§áƒ”áƒœáƒ” source control-áƒáƒ“ áƒ“áƒ áƒ°áƒáƒ¡áƒ¢áƒ˜áƒœáƒ’áƒ˜ áƒªáƒáƒšáƒ™áƒ”.
-- PHP/SQL áƒžáƒ áƒáƒ”áƒ¥áƒ¢áƒ”áƒ‘áƒ–áƒ” áƒ›áƒ£áƒ¨áƒáƒáƒ‘áƒ˜áƒ¡áƒáƒ¡ áƒ’áƒáƒ›áƒáƒ˜áƒ§áƒ”áƒœáƒ” XAMPP áƒšáƒáƒ™áƒáƒšáƒ£áƒ áƒáƒ“, áƒ¡áƒáƒœáƒáƒ› production hosting áƒ“áƒáƒ’áƒ­áƒ˜áƒ áƒ“áƒ”áƒ‘áƒ.
+```powershell
+git clone https://github.com/akhelasi/codex-starter-pack.git
+cd codex-starter-pack
+```
 
-áƒ¨áƒ”áƒœ áƒ›áƒ˜áƒ”áƒ  áƒ›áƒáƒªáƒ”áƒ›áƒ£áƒšáƒ˜ ChatGPT share áƒ‘áƒ›áƒ£áƒšáƒ˜áƒ¡ áƒ’áƒáƒ®áƒ¡áƒœáƒ tooling-áƒ˜áƒ— áƒ•áƒ”áƒ  áƒ“áƒáƒ“áƒáƒ¡áƒ¢áƒ£áƒ áƒ“áƒ, áƒáƒ›áƒ˜áƒ¢áƒáƒ› áƒžáƒáƒ™áƒ”áƒ¢áƒ˜ áƒáƒ•áƒáƒ¬áƒ§áƒ•áƒ” áƒ¨áƒ”áƒœáƒ¡ áƒáƒ¦áƒ¬áƒ”áƒ áƒáƒ–áƒ” áƒ“áƒ áƒáƒ¤áƒ˜áƒªáƒ˜áƒáƒšáƒ£áƒ /áƒžáƒáƒžáƒ£áƒšáƒáƒ áƒ£áƒš áƒ¬áƒ§áƒáƒ áƒáƒ”áƒ‘áƒ–áƒ” áƒ“áƒáƒ§áƒ áƒ“áƒœáƒáƒ‘áƒ˜áƒ—.
+Copy it into a project:
 
+```powershell
+.\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project"
+```
+
+Then tell Codex:
+
+```text
+Work in this project using AGENTS.md. Review .agents/skills and use only the skill, MCP server, or tool needed for the current task. Ask before GitHub write actions, deploys, database changes, or destructive operations.
+```
+
+## Recommended Default Use
+
+- Use `senior-web-engineer` for serious multi-file web development.
+- Use `adversarial-code-review` before pushing, deploying, or accepting substantial AI-generated code.
+- Use `php-sql-safety-review` for PHP, SQL, forms, sessions, auth, and database work.
+- Use `frontend-browser-qa` for UI, CSS, JavaScript, responsive layout, and browser checks.
+- Use `github-pages-manager` for GitHub repositories, GitHub Pages, and static-site deployment.
+- Use `controlled-file-editing` when editing starter-pack docs or when patch operations are slow.
+
+## MCP Policy
+
+Keep MCP usage conservative:
+
+- Good defaults: OpenAI Docs, Context7, Playwright/browser.
+- Enable when needed: GitHub, Chrome DevTools, Fetch.
+- Sensitive: database, filesystem, Figma, Sentry, Slack, Drive, Notion.
+
+Use prompt approvals, read-only modes, and narrow toolsets when possible. Do not commit tokens or secrets.
+
+## Notes
+
+Generated experiments and test projects belong in `outputs/` and should not be copied into real projects unless explicitly requested.
