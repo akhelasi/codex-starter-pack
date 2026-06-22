@@ -1,4 +1,4 @@
-﻿# Codex Web Development Guide
+# Codex Web Development Guide
 
 Use this repository as a Codex starter pack for HTML, CSS, JavaScript, PHP, and SQL website work.
 
@@ -26,6 +26,12 @@ When this pack is copied into a real project, treat these files as guidance unle
 
 Use only the document, skill, MCP server, or tool needed for the current task. Do not load every starter-pack file by default.
 
+
+## Sensitive MCP Defaults
+
+Do not install or enable production database MCP, broad filesystem MCP, Figma, Sentry, Slack, Drive, Notion, or similar private-workspace MCP servers by default. These are project-specific and sensitive.
+
+Enable them only when the active project actually needs them, after checking `docs/skills-mcp-security-review.md` and asking the user for approval. Prefer local/dev/read-only credentials and narrow scopes.
 ## User Profile
 
 - The user is a web developer working mainly with HTML, CSS, JavaScript, PHP, and SQL.
@@ -90,5 +96,6 @@ Choose the smallest meaningful checks available in the project:
 - SQL changes: run against a local/dev database only, or provide the exact SQL for review
 
 If checks cannot be run, say exactly what was not run and why.
+
 
 
