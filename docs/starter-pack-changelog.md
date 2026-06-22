@@ -126,3 +126,10 @@ The user wants Codex to manage GitHub setup, repositories, GitHub Pages, and fut
 - Added `docs/senior-codex-engineering-playbook.md`.
 - Adapted Karpathy/Claude Code agentic coding practices to Codex: explore, plan, implement, verify, review, and publish.
 - Kept MCP recommendations conservative: official docs, Context7, Playwright/browser, GitHub, Chrome DevTools, and local/dev database only when needed.
+
+## 2026-06-22 - Local MCP Configuration
+
+- Added global MCP configs for OpenAI Docs, Context7, Playwright, Chrome DevTools, GitHub, and Fetch.
+- Verified GitHub CLI remains authenticated as `akhelasi`.
+- Noted that new MCP tools may require Codex restart/new thread before appearing in tool discovery.
+- Did not install sensitive project-specific MCPs such as production database, filesystem, Figma, Sentry, Slack, Drive, or Notion.
