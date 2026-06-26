@@ -19,6 +19,9 @@ Use this skill when PHP or SQL risk matters.
 - Use transactions for multi-step writes.
 - Treat schema changes and deletes as high risk.
 - Avoid production database actions without explicit approval.
+- Distinguish local/demo storage from production storage. If JSON/file storage is used for approval, document when and how production switches to MySQL.
+- Track seed/demo content separately from client-approved content.
+- Add content audits for placeholder emails, phone numbers, bank accounts, generic URLs, unapproved source statuses, and demo admin credentials when launch readiness matters.
 
 ## Common Fix Patterns
 
@@ -33,3 +36,4 @@ Use this skill when PHP or SQL risk matters.
 - Run `php -l` on changed PHP files when possible.
 - If SQL changed, explain how it should be tested against a local/dev database.
 - If a destructive operation is requested, stop and ask for explicit confirmation.
+- For production readiness, require evidence from schema/migration dry-run, import dry-run, real database smoke test, strict readiness check, and backup/restore notes.

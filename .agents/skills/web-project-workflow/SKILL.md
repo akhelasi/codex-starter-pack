@@ -18,6 +18,16 @@ Use this workflow for practical website work.
 7. Run existing project checks when they are discoverable.
 8. For visible UI changes, verify in a browser when possible.
 
+## Long Project Phase Workflow
+
+Use this when the work spans many phases, pages, admin flows, database changes, or deployment steps.
+
+1. Create or update a project checklist with `DONE`, `TODO`, `WAITING`, `PROBLEM`, `REVIEW`, and `RETHINK` statuses.
+2. Keep a worklog that records what changed, how it was verified, bugs found, fixes applied, and what the next phase should remember.
+3. Add a safe local handoff command once checks become scattered. The default command should avoid destructive migrations, production credentials, external services, and host-only actions.
+4. Separate demo-ready from production-ready. Do not treat seed content, placeholder accounts, local JSON storage, or local browser checks as proof of production launch readiness.
+5. For every production blocker, name the missing evidence: client approval, hosting details, database smoke result, real credentials, provider API, manual QA signoff, or backup proof.
+
 ## Implementation Rules
 
 - Preserve existing code style.
@@ -27,6 +37,8 @@ Use this workflow for practical website work.
 - Escape server-rendered output in the correct context.
 - Include loading, empty, and error states for async UI.
 - Do not add dependencies without a clear project-level reason.
+- For XAMPP PHP projects, prefer serving the project through Apache and verifying the localhost URL. Use a junction/symlink into `htdocs` when appropriate instead of copying source files.
+- If browser automation is blocked, document the blocker and use route smoke, rendered DOM checks, and a manual QA checklist as fallback evidence. Do not claim visual QA is complete without a real browser pass.
 
 ## Final Response
 

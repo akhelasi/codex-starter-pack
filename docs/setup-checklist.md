@@ -14,6 +14,13 @@
    - migration command
    - seed command
    - production DB warning
+5. For multi-phase projects, add:
+   - project checklist
+   - project worklog
+   - local handoff command
+   - completion evidence matrix
+   - continuation prompt for future Codex sessions
+6. Mark unavailable client/host/provider items as `WAITING` instead of treating them as code bugs.
 
 ## Personal Codex Setup
 
@@ -47,6 +54,29 @@
 3. Test locally through `http://localhost/...`.
 4. Export or migrate the local database carefully when needed.
 5. Use paid PHP hosting only when the site is ready to publish.
+6. Prefer a junction/symlink from XAMPP `htdocs` to the project folder when safe, so files are not copied out of the Git workspace.
+7. Start MySQL only when the current storage mode needs it.
+8. Keep demo storage/content clearly separate from production storage/content.
+
+## Long Project Handoff
+
+For long Codex-built websites, create these early:
+
+- `docs/project-checklist.md` from `templates/project-checklist.md`
+- `docs/project-worklog.md` from `templates/project-worklog.md`
+- `docs/completion-evidence-matrix.md` from `templates/completion-evidence-matrix.md`
+- `docs/codex-continuation-prompt.md` from `templates/codex-continuation-prompt.md`
+
+Recommended status labels:
+
+- `DONE`
+- `TODO`
+- `WAITING`
+- `PROBLEM`
+- `REVIEW`
+- `RETHINK`
+
+Keep the handoff command non-destructive by default. Put migrations, production database checks, route smoke that needs a special server, external APIs, and credential-dependent checks behind explicit flags or separate host-only instructions.
 
 ## Tool Requirements
 

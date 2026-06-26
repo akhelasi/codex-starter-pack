@@ -144,3 +144,36 @@ The user wants Codex to manage GitHub setup, repositories, GitHub Pages, and fut
 
 - Added a work-computer setup prompt to `docs/clone-and-install.md`.
 - The prompt tells Codex how to clone `https://github.com/akhelasi/codex-starter-pack`, check Git/Node/GitHub CLI/Codex CLI, run the install script, and avoid sensitive MCP servers without approval.
+
+## 2026-06-26 - Lessons From Banza PHP/MySQL Site Build
+
+### Added
+
+- `docs/starter-pack-lessons-from-banza.md`
+- `templates/project-checklist.md`
+- `templates/project-worklog.md`
+- `templates/completion-evidence-matrix.md`
+- `templates/codex-continuation-prompt.md`
+
+### Updated
+
+- `AGENTS.md`
+- `.agents/skills/web-project-workflow/SKILL.md`
+- `.agents/skills/php-sql-safety-review/SKILL.md`
+- `.agents/skills/frontend-browser-qa/SKILL.md`
+- `docs/setup-checklist.md`
+- `docs/tooling-stability.md`
+- `templates/task-brief.md`
+
+### Why
+
+The Banza village site was a long phased PHP/MySQL project with public pages, admin CRUD, uploads, JSON-to-MySQL migration, launch readiness checks, manual QA blockers, GitHub handoff and XAMPP local serving. The starter pack now records the practical lessons from that work.
+
+### Decisions
+
+- Long projects should maintain a checklist, worklog, completion evidence matrix and continuation prompt.
+- Default handoff checks should be safe and non-destructive.
+- Production, migration, external-service and host-only checks should be explicit.
+- Demo-ready and production-ready states must be kept separate.
+- Browser automation blockers should be documented and handled with route/DOM/manual QA fallback evidence.
+- Starter-pack documentation edits should use small controlled patches when the sandbox is unstable.

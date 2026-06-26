@@ -10,6 +10,8 @@ This workspace has shown repeated slowdowns when using large `apply_patch` opera
 - If patching stalls for more than about 60 seconds, stop and report status.
 - Use the `controlled-file-editing` skill for starter-pack documentation edits.
 - Request scoped escalation when editing `.agents` or `.codex` is denied by sandbox permissions.
+- Avoid putting migration/setup scripts inside default aggregate checks if those commands behave differently in the sandbox. Make them opt-in and document where to run them safely.
+- When browser tooling fails due to local permissions, capture the exact error and use fallback route/DOM/manual QA evidence instead of retrying blindly.
 
 ## Fallback Policy
 

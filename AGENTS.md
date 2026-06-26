@@ -18,9 +18,11 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `.agents/skills/adversarial-code-review/SKILL.md`: second-opinion review for bugs, security, dead code, and verification gaps.
 - `.agents/skills/frontend-browser-qa/SKILL.md`: UI, layout, HTML, CSS, JavaScript interactions, responsive behavior, and browser QA.
 - `.agents/skills/github-pages-manager/SKILL.md`: GitHub repositories, GitHub Pages, publishing, deploy workflows, or site migration.
+- `.agents/skills/controlled-file-editing/SKILL.md`: safer editing workflow for starter-pack docs or slow patch operations.
 - `.codex/config.example.toml`: example MCP configuration; not active unless copied into real Codex config.
 - `docs/`: setup notes, GitHub/deploy guidance, MCP/security research, and starter-pack history.
 - `docs/senior-codex-engineering-playbook.md`: source-backed senior workflow adapted from Codex and Claude Code practices.
+- `docs/starter-pack-lessons-from-banza.md`: field notes from a long PHP/MySQL village-site build, including handoff, QA, content and tooling lessons.
 - `templates/`: reusable project instruction and task brief templates.
 - `outputs/`: generated experiments and test projects; do not copy into real projects unless requested.
 
@@ -48,6 +50,9 @@ Enable them only when the active project actually needs them, after checking `do
 - Do not add new dependencies unless they clearly reduce risk or match the project.
 - Never commit secrets, tokens, database dumps, `.env`, or generated credentials.
 - Before destructive database, filesystem, or git operations, ask for explicit approval.
+- On long multi-phase projects, maintain a checklist/worklog and distinguish demo-ready, handoff-ready, and production-ready states.
+- Treat client content, hosting, credentials, external providers, production database access, and manual QA as explicit `WAITING` blockers when they are not available.
+- Prefer one safe local handoff command when a project grows large; keep destructive, production, migration, or host-only checks behind explicit flags.
 
 ## Web Frontend Rules
 
