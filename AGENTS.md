@@ -19,10 +19,12 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `.agents/skills/frontend-browser-qa/SKILL.md`: UI, layout, HTML, CSS, JavaScript interactions, responsive behavior, and browser QA.
 - `.agents/skills/github-pages-manager/SKILL.md`: GitHub repositories, GitHub Pages, publishing, deploy workflows, or site migration.
 - `.agents/skills/controlled-file-editing/SKILL.md`: safer editing workflow for starter-pack docs or slow patch operations.
+- `.agents/skills/obsidian-project-knowledge/SKILL.md`: Obsidian-compatible Markdown vault workflow for long-term project memory.
 - `.codex/config.example.toml`: example MCP configuration; not active unless copied into real Codex config.
 - `docs/`: setup notes, GitHub/deploy guidance, MCP/security research, and starter-pack history.
 - `docs/senior-codex-engineering-playbook.md`: source-backed senior workflow adapted from Codex and Claude Code practices.
 - `docs/starter-pack-lessons-from-banza.md`: field notes from a long PHP/MySQL village-site build, including handoff, QA, content and tooling lessons.
+- `docs/obsidian-codex-workflow.md`: how to use Obsidian-style linked Markdown notes with Codex.
 - `templates/`: reusable project instruction and task brief templates.
 - `outputs/`: generated experiments and test projects; do not copy into real projects unless requested.
 
@@ -101,6 +103,3 @@ Choose the smallest meaningful checks available in the project:
 - SQL changes: run against a local/dev database only, or provide the exact SQL for review
 
 If checks cannot be run, say exactly what was not run and why.
-
-
-

@@ -177,3 +177,11 @@ The Banza village site was a long phased PHP/MySQL project with public pages, ad
 - Demo-ready and production-ready states must be kept separate.
 - Browser automation blockers should be documented and handled with route/DOM/manual QA fallback evidence.
 - Starter-pack documentation edits should use small controlled patches when the sandbox is unstable.
+
+## 2026-06-27 - Obsidian-Compatible Project Knowledge
+
+- Added `.agents/skills/obsidian-project-knowledge/SKILL.md`.
+- Added `docs/obsidian-codex-workflow.md`.
+- Added `templates/obsidian/` note templates for project index, daily notes, decision notes, research notes and handoff notes.
+- Documented an Obsidian-style Markdown vault workflow for Codex: linked small notes, project memory, decisions, WAITING blockers, verification evidence and continuation prompts.
+- Kept security guidance explicit: private client evidence, credentials, production DB details and signoff artifacts should stay outside Git.

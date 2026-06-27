@@ -17,8 +17,10 @@ These files are not product code. They are working instructions, reusable skills
 - `docs/mcp-and-skills-research.md` - research notes and source links for MCP/skill choices.
 - `docs/file-maintenance-guide.md` - what to update in which file and when.
 - `docs/tooling-stability.md` - notes about patch/write stability issues and mitigation.
+- `docs/obsidian-codex-workflow.md` - Obsidian-compatible linked-notes workflow for Codex projects.
 - `docs/starter-pack-changelog.md` - history of meaningful starter-pack changes.
 - `templates/` - reusable project instruction and task brief templates.
+- `templates/obsidian/` - note templates for project index, daily notes, decisions, research and handoff.
 - `scripts/install-starter-pack.ps1` - installer script for copying the pack into a project.
 
 ## Install Into A Project
