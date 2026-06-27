@@ -185,3 +185,11 @@ The Banza village site was a long phased PHP/MySQL project with public pages, ad
 - Added `templates/obsidian/` note templates for project index, daily notes, decision notes, research notes and handoff notes.
 - Documented an Obsidian-style Markdown vault workflow for Codex: linked small notes, project memory, decisions, WAITING blockers, verification evidence and continuation prompts.
 - Kept security guidance explicit: private client evidence, credentials, production DB details and signoff artifacts should stay outside Git.
+
+## 2026-06-27 - Recursive Starter Pack Improvement
+
+- Added `.agents/skills/recursive-starter-pack-improvement/SKILL.md`.
+- Added `docs/recursive-starter-pack-improvement.md`.
+- Added `templates/starter-pack-improvement-note.md`.
+- Added `Starter Pack Self-Improvement` guidance to `AGENTS.md`.
+- The starter pack now records how to promote repeated, verified, reusable project lessons back into skills, docs, templates, MCP config or AGENTS guidance without copying private/project-specific data.

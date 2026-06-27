@@ -20,16 +20,24 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `.agents/skills/github-pages-manager/SKILL.md`: GitHub repositories, GitHub Pages, publishing, deploy workflows, or site migration.
 - `.agents/skills/controlled-file-editing/SKILL.md`: safer editing workflow for starter-pack docs or slow patch operations.
 - `.agents/skills/obsidian-project-knowledge/SKILL.md`: Obsidian-compatible Markdown vault workflow for long-term project memory.
+- `.agents/skills/recursive-starter-pack-improvement/SKILL.md`: promote verified reusable lessons from real projects back into the starter pack.
 - `.codex/config.example.toml`: example MCP configuration; not active unless copied into real Codex config.
 - `docs/`: setup notes, GitHub/deploy guidance, MCP/security research, and starter-pack history.
 - `docs/senior-codex-engineering-playbook.md`: source-backed senior workflow adapted from Codex and Claude Code practices.
 - `docs/starter-pack-lessons-from-banza.md`: field notes from a long PHP/MySQL village-site build, including handoff, QA, content and tooling lessons.
 - `docs/obsidian-codex-workflow.md`: how to use Obsidian-style linked Markdown notes with Codex.
+- `docs/recursive-starter-pack-improvement.md`: rules for improving this starter pack from repeated project experience.
 - `templates/`: reusable project instruction and task brief templates.
 - `outputs/`: generated experiments and test projects; do not copy into real projects unless requested.
 
 Use only the document, skill, MCP server, or tool needed for the current task. Do not load every starter-pack file by default.
 
+
+## Starter Pack Self-Improvement
+
+When a real project reveals a repeated problem, verified fix, safer workflow, or better reusable pattern, capture it as a starter-pack improvement candidate. Promote it only when it is reusable beyond one project, does not contain private/project-specific data, and has been verified or explicitly requested by the user.
+
+Use `.agents/skills/recursive-starter-pack-improvement/SKILL.md` and `docs/recursive-starter-pack-improvement.md` for this process. Update `docs/starter-pack-changelog.md` after meaningful starter-pack changes.
 
 ## Sensitive MCP Defaults
 
