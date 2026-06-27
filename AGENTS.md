@@ -65,6 +65,7 @@ Enable them only when the active project actually needs them, after checking `do
 - On long multi-phase projects, maintain a checklist/worklog and distinguish demo-ready, handoff-ready, and production-ready states.
 - Treat client content, hosting, credentials, external providers, production database access, and manual QA as explicit `WAITING` blockers when they are not available.
 - Prefer one safe local handoff command when a project grows large; keep destructive, production, migration, or host-only checks behind explicit flags.
+- If a large multi-file `apply_patch` or documentation edit appears stuck, treat patch size/tooling as the likely issue first, report status, then continue with small one-file or one-section patches and verify each edit.
 
 ## Web Frontend Rules
 

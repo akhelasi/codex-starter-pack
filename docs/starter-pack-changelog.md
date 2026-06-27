@@ -200,3 +200,13 @@ The Banza village site was a long phased PHP/MySQL project with public pages, ad
 - Added `docs/multi-starter-pack-hub.md`.
 - Sent a detailed background prompt to the existing `გააუმჯობესე Binance grid` thread asking it to create a Binance/trading-focused starter pack with recursive improvement, API/secrets safety, backtesting, paper/testnet defaults and live-trading approval gates.
 - Documented the plan to eventually keep web, Binance/trading and Unity/C# game starter packs in one hub and route Codex work to the right pack.
+
+## 2026-06-27 - Large Patch Stall Recovery
+
+- Generalized the `controlled-file-editing` skill beyond web/starter-pack docs so it applies to any project where large multi-file patches or documentation edits stall.
+- Updated `docs/tooling-stability.md` with a reusable diagnostic: if a broad `apply_patch` appears stuck but smaller reads/status checks work, treat patch size/tooling as the likely blocker and retry with one-file or one-section patches.
+- Added the same rule to `AGENTS.md` so future Codex sessions see it during initial project instructions.
+
+### Why
+
+The Binance trading-bot thread hit the same failure pattern: a very large multi-file `apply_patch` stalled, then the work completed after switching to smaller patches. This is a cross-project tooling lesson, not a Binance-only or web-only rule.
