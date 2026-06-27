@@ -1,0 +1,31 @@
+# Example only. Do not copy this file into active Codex config without reviewing
+# docs/mcp-install-policy.md and getting user approval.
+
+# Recommended default for this pack:
+# - Use official docs MCP / browser search for documentation.
+# - Keep exchange/trading MCPs disabled unless a specific project needs them.
+
+# Optional candidate: community CCXT MCP.
+# Risk: can expose private account data and trading operations depending on config.
+# Enable only after source/package review and user approval.
+#
+# [mcp_servers.ccxt]
+# command = "npx.cmd"
+# args = ["-y", "@mcpfun/mcp-server-ccxt"]
+
+# Optional candidate: community CCXT MCP.
+# Risk: can expose private account data and trading operations depending on config.
+# npm metadata timed out during the 2026-06-28 review, so re-verify before use.
+#
+# [mcp_servers.ccxt_lazydino]
+# command = "npx.cmd"
+# args = ["-y", "@lazydino/ccxt-mcp"]
+
+# Optional candidate: community Binance MCP.
+# Risk: account and trading tools. Keep disabled unless explicitly approved.
+# Prefer testnet/read-only keys and never enable withdrawal.
+#
+# [mcp_servers.binance]
+# command = "uvx"
+# args = ["binance-mcp-server", "--binance-testnet"]
+# env = { BINANCE_API_KEY = "", BINANCE_API_SECRET = "" }

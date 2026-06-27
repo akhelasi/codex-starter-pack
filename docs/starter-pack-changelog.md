@@ -198,7 +198,7 @@ The Banza village site was a long phased PHP/MySQL project with public pages, ad
 
 - Added `.agents/skills/starter-pack-router/SKILL.md`.
 - Added `docs/multi-starter-pack-hub.md`.
-- Sent a detailed background prompt to the existing `გააუმჯობესე Binance grid` thread asking it to create a Binance/trading-focused starter pack with recursive improvement, API/secrets safety, backtesting, paper/testnet defaults and live-trading approval gates.
+- Sent a detailed background prompt to the existing `Ã¡Æ’â€™Ã¡Æ’ÂÃ¡Æ’ÂÃ¡Æ’Â£Ã¡Æ’â€ºÃ¡Æ’Â¯Ã¡Æ’ÂÃ¡Æ’â€˜Ã¡Æ’â€Ã¡Æ’Â¡Ã¡Æ’â€ Binance grid` thread asking it to create a Binance/trading-focused starter pack with recursive improvement, API/secrets safety, backtesting, paper/testnet defaults and live-trading approval gates.
 - Documented the plan to eventually keep web, Binance/trading and Unity/C# game starter packs in one hub and route Codex work to the right pack.
 
 ## 2026-06-27 - Large Patch Stall Recovery
@@ -210,3 +210,15 @@ The Banza village site was a long phased PHP/MySQL project with public pages, ad
 ### Why
 
 The Binance trading-bot thread hit the same failure pattern: a very large multi-file `apply_patch` stalled, then the work completed after switching to smaller patches. This is a cross-project tooling lesson, not a Binance-only or web-only rule.
+
+## 2026-06-28 - Initial Binance Trading Starter Pack
+
+- Added `packs/binance-trading/` as the first focused non-web starter pack.
+- Added Binance/trading skills for bot workflow, MCP safety review, and strategy/backtest review.
+- Added research notes covering official Binance docs/connectors, CCXT, Freqtrade, Hummingbot, and community Binance/CCXT MCP candidates.
+- Added a conservative trading MCP install policy, commented config examples, and a pack-local `.gitignore` for secrets/private trading data.
+- Kept trade-capable MCPs disabled by default because they can access account data or place/cancel orders.
+
+### Why
+
+The user wants multiple starter packs in one workspace and asked for Binance/crypto trading research, skills, MCP guidance, and documentation. The safe default is documentation plus opt-in review gates, not automatic installation of exchange-access MCPs.

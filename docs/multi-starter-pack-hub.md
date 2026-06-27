@@ -1,6 +1,6 @@
 # Multi Starter Pack Hub
 
-Updated: 2026-06-27
+Updated: 2026-06-28
 
 This document defines how to use multiple Codex starter packs together.
 
@@ -9,7 +9,7 @@ This document defines how to use multiple Codex starter packs together.
 The user wants several focused starter packs in one workspace:
 
 - Web development starter pack: current pack, for HTML, CSS, JavaScript, PHP, SQL/MySQL, XAMPP, GitHub and browser QA.
-- Binance/trading starter pack: planned/in progress in the Binance grid improvement thread, for Binance bots, demo/testnet, strategy research, backtesting and risk controls.
+- Binance/trading starter pack: initial pack installed under `packs/binance-trading/`, for Binance bots, crypto exchange APIs, demo/testnet, strategy research, backtesting and risk controls.
 - Unity/C# game starter pack: planned future pack for Unity, C#, gameplay, assets, builds and playtesting.
 
 Codex should select the relevant starter pack for the active project instead of loading everything.
@@ -31,7 +31,7 @@ codex-starter-packs/
     templates/
 ```
 
-Until the hub is physically reorganized, this repository remains the web starter pack and also contains the initial hub/router guidance.
+This repository still keeps the web pack at the root for compatibility, and now also contains the initial Binance/trading pack under `packs/binance-trading/`.
 
 ## Routing Workflow
 
@@ -77,7 +77,6 @@ The Binance/trading pack should default to:
 
 ## Future Work
 
-- Import/merge the Binance/trading pack once the Binance thread produces a clean export.
+- Continue improving `packs/binance-trading/` from real Binance bot work and keep trade-capable MCPs opt-in only.
 - Later create a Unity/C# game pack with its own skills/docs/templates.
 - Consider reorganizing this GitHub repo into a true `codex-starter-packs` hub once at least two packs are ready.
-

@@ -1,0 +1,23 @@
+﻿# Secrets and local exchange config
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*secret*
+*token*
+
+# Trading/account private data
+account-exports/
+trade-logs/
+real-trades/
+balances/
+private-data/
+
+# Local runtime/cache
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+build/
+*.log

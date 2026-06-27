@@ -1,6 +1,6 @@
 # Codex Starter Pack for Web Development
 
-This repository is a portable Codex starter pack for web projects using HTML, CSS, JavaScript, PHP, SQL, GitHub Pages, XAMPP, and PHP hosting.
+This repository is a portable Codex starter-pack workspace. The root pack focuses on web projects using HTML, CSS, JavaScript, PHP, SQL, GitHub Pages, XAMPP, and PHP hosting. It also contains focused packs under `packs/`, including an initial Binance/crypto trading pack.
 
 These files are not product code. They are working instructions, reusable skills, checklists, templates, MCP examples, and maintenance notes that help Codex work more like a senior web engineer.
 
@@ -24,6 +24,7 @@ These files are not product code. They are working instructions, reusable skills
 - `templates/` - reusable project instruction and task brief templates.
 - `templates/obsidian/` - note templates for project index, daily notes, decisions, research and handoff.
 - `templates/starter-pack-improvement-note.md` - capture format for reusable improvement candidates.
+- `packs/binance-trading/` - Binance and crypto trading bot starter pack with safety-first MCP guidance.
 - `scripts/install-starter-pack.ps1` - installer script for copying the pack into a project.
 
 ## Install Into A Project

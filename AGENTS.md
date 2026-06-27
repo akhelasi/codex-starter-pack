@@ -29,6 +29,7 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `docs/obsidian-codex-workflow.md`: how to use Obsidian-style linked Markdown notes with Codex.
 - `docs/recursive-starter-pack-improvement.md`: rules for improving this starter pack from repeated project experience.
 - `docs/multi-starter-pack-hub.md`: plan for using web, Binance/trading, Unity/game and future packs together.
+- `packs/binance-trading/`: Binance and crypto trading bot starter pack. Use only for trading/API/backtest/risk tasks.
 - `templates/`: reusable project instruction and task brief templates.
 - `outputs/`: generated experiments and test projects; do not copy into real projects unless requested.
 
