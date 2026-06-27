@@ -19,6 +19,7 @@ These files are not product code. They are working instructions, reusable skills
 - `docs/tooling-stability.md` - notes about patch/write stability issues and mitigation.
 - `docs/obsidian-codex-workflow.md` - Obsidian-compatible linked-notes workflow for Codex projects.
 - `docs/recursive-starter-pack-improvement.md` - process for promoting verified project lessons back into the starter pack.
+- `docs/multi-starter-pack-hub.md` - router plan for web, Binance/trading, Unity/game and future starter packs.
 - `docs/starter-pack-changelog.md` - history of meaningful starter-pack changes.
 - `templates/` - reusable project instruction and task brief templates.
 - `templates/obsidian/` - note templates for project index, daily notes, decisions, research and handoff.

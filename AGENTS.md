@@ -21,12 +21,14 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `.agents/skills/controlled-file-editing/SKILL.md`: safer editing workflow for starter-pack docs or slow patch operations.
 - `.agents/skills/obsidian-project-knowledge/SKILL.md`: Obsidian-compatible Markdown vault workflow for long-term project memory.
 - `.agents/skills/recursive-starter-pack-improvement/SKILL.md`: promote verified reusable lessons from real projects back into the starter pack.
+- `.agents/skills/starter-pack-router/SKILL.md`: choose the correct starter pack when web, trading, game or future packs coexist.
 - `.codex/config.example.toml`: example MCP configuration; not active unless copied into real Codex config.
 - `docs/`: setup notes, GitHub/deploy guidance, MCP/security research, and starter-pack history.
 - `docs/senior-codex-engineering-playbook.md`: source-backed senior workflow adapted from Codex and Claude Code practices.
 - `docs/starter-pack-lessons-from-banza.md`: field notes from a long PHP/MySQL village-site build, including handoff, QA, content and tooling lessons.
 - `docs/obsidian-codex-workflow.md`: how to use Obsidian-style linked Markdown notes with Codex.
 - `docs/recursive-starter-pack-improvement.md`: rules for improving this starter pack from repeated project experience.
+- `docs/multi-starter-pack-hub.md`: plan for using web, Binance/trading, Unity/game and future packs together.
 - `templates/`: reusable project instruction and task brief templates.
 - `outputs/`: generated experiments and test projects; do not copy into real projects unless requested.
 

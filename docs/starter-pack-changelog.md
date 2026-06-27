@@ -193,3 +193,10 @@ The Banza village site was a long phased PHP/MySQL project with public pages, ad
 - Added `templates/starter-pack-improvement-note.md`.
 - Added `Starter Pack Self-Improvement` guidance to `AGENTS.md`.
 - The starter pack now records how to promote repeated, verified, reusable project lessons back into skills, docs, templates, MCP config or AGENTS guidance without copying private/project-specific data.
+
+## 2026-06-27 - Multi Starter Pack Hub Plan
+
+- Added `.agents/skills/starter-pack-router/SKILL.md`.
+- Added `docs/multi-starter-pack-hub.md`.
+- Sent a detailed background prompt to the existing `გააუმჯობესე Binance grid` thread asking it to create a Binance/trading-focused starter pack with recursive improvement, API/secrets safety, backtesting, paper/testnet defaults and live-trading approval gates.
+- Documented the plan to eventually keep web, Binance/trading and Unity/C# game starter packs in one hub and route Codex work to the right pack.
