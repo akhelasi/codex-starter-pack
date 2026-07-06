@@ -20,7 +20,9 @@
    - local handoff command
    - completion evidence matrix
    - continuation prompt for future Codex sessions
-6. Mark unavailable client/host/provider items as `WAITING` instead of treating them as code bugs.
+   - agent coordination board if multiple Codex threads/agents will work in parallel
+6. If external tools matter, create `docs/plugin-integration-plan.md` from `templates/plugin-integration-plan.md`.
+7. Mark unavailable client/host/provider items as `WAITING` instead of treating them as code bugs.
 
 ## Personal Codex Setup
 

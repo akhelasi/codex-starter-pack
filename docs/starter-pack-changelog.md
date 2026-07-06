@@ -222,3 +222,15 @@ The Binance trading-bot thread hit the same failure pattern: a very large multi-
 ### Why
 
 The user wants multiple starter packs in one workspace and asked for Binance/crypto trading research, skills, MCP guidance, and documentation. The safe default is documentation plus opt-in review gates, not automatic installation of exchange-access MCPs.
+
+## 2026-07-06 - Plugin Integration And Multi-Agent Coordination
+
+- Added `.agents/skills/plugin-integration-planner/SKILL.md`.
+- Added `docs/plugin-integration-playbook.md`.
+- Added `templates/plugin-integration-plan.md`.
+- Added `templates/agent-coordination-board.md`.
+- Updated `AGENTS.md`, `README.md`, `docs/setup-checklist.md`, `docs/file-maintenance-guide.md`, `docs/skills-mcp-security-review.md`, and `templates/task-brief.md`.
+
+### Why
+
+The user wanted the starter pack to explain when plugins such as GitHub, Linear, Slack, Gmail, Drive, Figma, Vercel, Supabase, Computer Use, Binance, Game Studio, data visualization, and security tools should be used. The new guidance also records a Linear/GitHub/Jira/ClickUp board pattern for multiple Codex agents working in parallel, so each agent can see what others did, what they are doing, and what remains blocked.

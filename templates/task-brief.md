@@ -1,4 +1,4 @@
-# Task Brief for Codex
+﻿# Task Brief for Codex
 
 ## Goal
 
@@ -20,6 +20,15 @@ Describe the exact feature, bug, or change.
 - Storage model:
 - Hosting/deployment expectation:
 - External blockers or client-provided items:
+
+## Tools / Plugins
+
+- Task board: GitHub Issues / Linear / Jira / ClickUp / none
+- Docs source: Drive / SharePoint / Notion / Confluence / local files / none
+- Design source: Figma / MagicPath / screenshots / none
+- Deploy/observability: Vercel / Supabase / Sentry / hosting panel / none
+- Communication source: Slack / Gmail / Calendar / none
+- Approval gates:
 
 ## Verification
 

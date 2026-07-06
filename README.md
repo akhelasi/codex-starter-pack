@@ -20,10 +20,13 @@ These files are not product code. They are working instructions, reusable skills
 - `docs/obsidian-codex-workflow.md` - Obsidian-compatible linked-notes workflow for Codex projects.
 - `docs/recursive-starter-pack-improvement.md` - process for promoting verified project lessons back into the starter pack.
 - `docs/multi-starter-pack-hub.md` - router plan for web, Binance/trading, Unity/game and future starter packs.
+- `docs/plugin-integration-playbook.md` - plugin/connectors use cases, safety tiers, and multi-agent board patterns.
 - `docs/starter-pack-changelog.md` - history of meaningful starter-pack changes.
 - `templates/` - reusable project instruction and task brief templates.
 - `templates/obsidian/` - note templates for project index, daily notes, decisions, research and handoff.
 - `templates/starter-pack-improvement-note.md` - capture format for reusable improvement candidates.
+- `templates/plugin-integration-plan.md` - project-level plan for selected plugins/connectors and approvals.
+- `templates/agent-coordination-board.md` - Linear/GitHub/Jira/ClickUp board template for multiple Codex agents.
 - `packs/binance-trading/` - Binance and crypto trading bot starter pack with safety-first MCP guidance.
 - `scripts/install-starter-pack.ps1` - installer script for copying the pack into a project.
 

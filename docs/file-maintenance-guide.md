@@ -65,6 +65,14 @@ Change when:
 - New research sources are checked.
 - A recommendation needs source links or reasoning.
 
+### `docs/plugin-integration-playbook.md`
+
+Change when:
+
+- Adding or changing guidance for Codex plugins, apps/connectors, or external work systems.
+- Changing when to use GitHub, Linear, Drive, Figma, Vercel, Supabase, Slack, Gmail, Calendar, security, analytics, trading, game or data plugins.
+- Multi-agent coordination workflow changes.
+
 ### `docs/starter-pack-changelog.md`
 
 Change after every meaningful starter-pack change:

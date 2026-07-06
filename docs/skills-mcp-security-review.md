@@ -8,6 +8,8 @@ Do not install every popular skill or MCP server before a project starts. Use a 
 
 No web review can prove a package is malware-free forever. Treat MCP servers and public skills like developer dependencies: useful, but part of the supply chain.
 
+For Codex plugins and apps/connectors such as GitHub, Linear, Slack, Gmail, Drive, Figma, Vercel, Supabase, Sentry, and Computer Use, use `docs/plugin-integration-playbook.md` before enabling private workspace access or write actions.
+
 ## Recommended Before Starting Web Projects
 
 Local skills from this starter pack:
