@@ -1,0 +1,33 @@
+outputs/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local caches and tool output
+.cache/
+.tmp/
+tmp/
+temp/
+node_modules/
+.pytest_cache/
+__pycache__/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Trading/private runtime data
+*.sqlite
+*.sqlite3
+*.db
+trade-logs/
+account-exports/
+private-trade-history/

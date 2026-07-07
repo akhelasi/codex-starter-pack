@@ -24,7 +24,15 @@ This copies:
 - `docs`
 - `templates`
 
-It does not copy generated experiments from `outputs`.
+It does not copy focused packs or generated experiments from `outputs` by default.
+
+To copy focused packs such as `packs/binance-trading/`, run:
+
+```powershell
+.\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
+```
+
+The installer is safe to run again. It copies files to their exact target paths and merges starter-pack folders without creating nested folders such as `.agents\.agents`.
 
 ## Prompt For Codex
 

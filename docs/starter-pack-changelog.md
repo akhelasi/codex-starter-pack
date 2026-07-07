@@ -198,7 +198,7 @@ The Banza village site was a long phased PHP/MySQL project with public pages, ad
 
 - Added `.agents/skills/starter-pack-router/SKILL.md`.
 - Added `docs/multi-starter-pack-hub.md`.
-- Sent a detailed background prompt to the existing `Ã¡Æ’â€™Ã¡Æ’ÂÃ¡Æ’ÂÃ¡Æ’Â£Ã¡Æ’â€ºÃ¡Æ’Â¯Ã¡Æ’ÂÃ¡Æ’â€˜Ã¡Æ’â€Ã¡Æ’Â¡Ã¡Æ’â€ Binance grid` thread asking it to create a Binance/trading-focused starter pack with recursive improvement, API/secrets safety, backtesting, paper/testnet defaults and live-trading approval gates.
+- Sent a detailed background prompt to the existing Binance grid thread asking it to create a Binance/trading-focused starter pack with recursive improvement, API/secrets safety, backtesting, paper/testnet defaults and live-trading approval gates.
 - Documented the plan to eventually keep web, Binance/trading and Unity/C# game starter packs in one hub and route Codex work to the right pack.
 
 ## 2026-06-27 - Large Patch Stall Recovery
@@ -234,3 +234,14 @@ The user wants multiple starter packs in one workspace and asked for Binance/cry
 ### Why
 
 The user wanted the starter pack to explain when plugins such as GitHub, Linear, Slack, Gmail, Drive, Figma, Vercel, Supabase, Computer Use, Binance, Game Studio, data visualization, and security tools should be used. The new guidance also records a Linear/GitHub/Jira/ClickUp board pattern for multiple Codex agents working in parallel, so each agent can see what others did, what they are doing, and what remains blocked.
+
+## 2026-07-07 - Safer Installer Re-Runs
+
+- Updated `scripts/install-starter-pack.ps1` so repeated installs merge folders by exact path instead of creating nested folders such as `.agents\.agents`.
+- Added optional `-IncludePacks` support for copying focused packs such as `packs/binance-trading/`.
+- Added a root `.gitignore` for generated outputs, local env files, caches, editor noise, and private trading/runtime data.
+- Updated `README.md` and `docs/clone-and-install.md` to document the new installer behavior.
+
+### Why
+
+The work-computer clone review found that the installer could nest existing target directories on re-run, and the multi-pack workflow needed an explicit opt-in for copying `packs/`. The starter-pack source also needed a root ignore file to reduce the chance of committing generated experiments, secrets, cache files, or private runtime data.

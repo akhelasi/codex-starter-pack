@@ -45,6 +45,12 @@ Copy it into a project:
 .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project"
 ```
 
+Copy focused packs too when the project should receive `packs/`:
+
+```powershell
+.\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
+```
+
 Then tell Codex:
 
 ```text
