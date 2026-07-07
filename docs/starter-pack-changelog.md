@@ -246,3 +246,15 @@ The user wanted the starter pack to explain when plugins such as GitHub, Linear,
 ### Why
 
 The work-computer clone review found that the installer could nest existing target directories on re-run, and the multi-pack workflow needed an explicit opt-in for copying `packs/`. The starter-pack source also needed a root ignore file to reduce the chance of committing generated experiments, secrets, cache files, or private runtime data.
+
+## 2026-07-07 - Codebase Memory MCP Research
+
+- Added `docs/codebase-memory-mcp-research.md`.
+- Updated `AGENTS.md`, `README.md`, `.codex/config.example.toml`, `docs/skills-mcp-security-review.md`, `docs/mcp-and-skills-research.md`, `docs/obsidian-codex-workflow.md`, and `docs/file-maintenance-guide.md`.
+- Documented `DeusData/codebase-memory-mcp` as an optional large-codebase code-intelligence MCP, useful for graph search, architecture summaries, call graphs, route/cross-service links and change-impact analysis.
+- Kept it disabled by default because it reads source files, can modify agent configuration, can add a binary to PATH, and may run background watchers.
+- Clarified that Codebase Memory MCP does not replace Obsidian-style notes: Codebase Memory is for code structure, while Obsidian is for human project memory, decisions, blockers, research and handoff context.
+
+### Why
+
+The user found `DeusData/codebase-memory-mcp` and asked whether it could improve the starter pack and whether it makes Obsidian unnecessary. The reviewed policy keeps both: Obsidian-compatible Markdown for durable human-readable context, and Codebase Memory MCP as an opt-in code graph tool for larger projects after review and user approval.

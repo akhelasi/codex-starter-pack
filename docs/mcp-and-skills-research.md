@@ -36,6 +36,7 @@ Curated/built-in skills worth using when available:
 - Playwright MCP: browser automation and interaction checks for frontend work.
 - Chrome DevTools MCP: Chrome inspection, screenshots, console/performance style checks.
 - GitHub MCP: issues, pull requests, repository browsing, Actions, and workflow information beyond local git.
+- Codebase Memory MCP: optional code-intelligence graph for large or unfamiliar repositories; useful for call graphs, architecture summaries, code search, route/cross-service links and change-impact analysis.
 
 ### Situational Candidates
 
@@ -53,6 +54,7 @@ Curated/built-in skills worth using when available:
 - Do not place real tokens in committed config files.
 - Use environment variables for tokens.
 - Avoid broad filesystem MCP servers unless the allowed path is tightly scoped.
+- Do not install codebase indexing MCPs by default. They can read broad source trees and may write agent configuration; review `docs/codebase-memory-mcp-research.md` before enabling.
 
 ## Source Notes
 
@@ -63,6 +65,7 @@ Curated/built-in skills worth using when available:
 - Context7 provides both CLI+Skills and MCP modes for up-to-date code documentation.
 - Microsoft Playwright MCP provides browser automation using Playwright and documents Codex setup.
 - GitHub MCP is GitHub's official server for repository, issue, pull request, workflow, and code context.
+- `DeusData/codebase-memory-mcp` is a third-party code-intelligence MCP that indexes repositories into a local graph. It is promising for large-codebase work, but should be opt-in because it reads source files and configures agents.
 
 ## Source Links
 
@@ -76,5 +79,6 @@ Curated/built-in skills worth using when available:
 - Playwright MCP: https://github.com/microsoft/playwright-mcp
 - Chrome DevTools MCP: https://github.com/ChromeDevTools/chrome-devtools-mcp
 - GitHub MCP Server: https://github.com/github/github-mcp-server
+- Codebase Memory MCP: https://github.com/DeusData/codebase-memory-mcp
 
 The provided ChatGPT share link was not accessible through the available tooling, so this pack uses the user's described goal plus current public documentation.

@@ -28,6 +28,7 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `docs/senior-codex-engineering-playbook.md`: source-backed senior workflow adapted from Codex and Claude Code practices.
 - `docs/starter-pack-lessons-from-banza.md`: field notes from a long PHP/MySQL village-site build, including handoff, QA, content and tooling lessons.
 - `docs/obsidian-codex-workflow.md`: how to use Obsidian-style linked Markdown notes with Codex.
+- `docs/codebase-memory-mcp-research.md`: optional Codebase Memory MCP review for large-codebase graph search and impact analysis.
 - `docs/recursive-starter-pack-improvement.md`: rules for improving this starter pack from repeated project experience.
 - `docs/multi-starter-pack-hub.md`: plan for using web, Binance/trading, Unity/game and future packs together.
 - `docs/plugin-integration-playbook.md`: when and how to use GitHub, Linear, Drive, Figma, Vercel, Supabase, Slack and other plugins.
@@ -46,7 +47,7 @@ Use `.agents/skills/recursive-starter-pack-improvement/SKILL.md` and `docs/recur
 
 ## Sensitive MCP Defaults
 
-Do not install or enable production database MCP, broad filesystem MCP, Figma, Sentry, Slack, Drive, Notion, or similar private-workspace MCP servers by default. These are project-specific and sensitive.
+Do not install or enable production database MCP, broad filesystem MCP, Codebase Memory MCP, Figma, Sentry, Slack, Drive, Notion, or similar private-workspace MCP servers by default. These are project-specific and sensitive.
 
 Enable them only when the active project actually needs them, after checking `docs/skills-mcp-security-review.md` and asking the user for approval. Prefer local/dev/read-only credentials and narrow scopes.
 ## User Profile

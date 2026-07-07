@@ -50,6 +50,17 @@ args = ["mcp-server-fetch"]
 enabled = false
 default_tools_approval_mode = "prompt"
 
+# Codebase Memory MCP. Optional for large-codebase graph search, architecture
+# summaries, call graphs, and impact analysis. Review
+# docs/codebase-memory-mcp-research.md before installing or enabling.
+# [mcp_servers.codebase_memory]
+# command = "codebase-memory-mcp"
+# args = []
+# enabled = false
+# startup_timeout_sec = 30
+# tool_timeout_sec = 120
+# default_tools_approval_mode = "prompt"
+
 # GitHub remote MCP. Requires authentication in the host/client.
 # Prefer the least-privileged token or OAuth flow.
 [mcp_servers.github]

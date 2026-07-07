@@ -42,6 +42,7 @@ Keep them disabled until needed, except docs MCP if you often ask current docume
 - Chrome DevTools MCP: useful for performance, console, network, and Chrome inspection.
 - Fetch MCP: useful for fetching web pages, but web content can contain prompt injection.
 - Git MCP: often unnecessary because Codex already has shell/git access.
+- Codebase Memory MCP: useful for large-codebase graph search, architecture summaries, call graphs and change-impact analysis. Review `docs/codebase-memory-mcp-research.md` first and ask approval because it reads source files, can edit agent config, and may run background watchers.
 
 ### Tier 3 - Sensitive
 
@@ -55,6 +56,7 @@ Keep them disabled until needed, except docs MCP if you often ask current docume
 - Experimental or insiders modes.
 - Production database MCP.
 - Broad filesystem access.
+- Codebase graph/indexing MCP for tiny projects or before source/config access is approved.
 - Multiple overlapping servers with the same powers.
 - Any server that asks for admin-level credentials without a clear need.
 

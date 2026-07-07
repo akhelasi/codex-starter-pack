@@ -65,6 +65,8 @@ Change when:
 - New research sources are checked.
 - A recommendation needs source links or reasoning.
 
+Add a focused `docs/<tool-name>-research.md` when one MCP/plugin/tool needs its own install safety, comparison, or adoption policy.
+
 ### `docs/plugin-integration-playbook.md`
 
 Change when:

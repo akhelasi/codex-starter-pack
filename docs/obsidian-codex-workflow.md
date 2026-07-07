@@ -8,6 +8,8 @@ This starter-pack workflow adapts Obsidian-style linked Markdown notes for Codex
 
 Obsidian stores notes as local Markdown files in a vault. Its useful coding-workflow features are not magic: they are plain text notes, internal links, backlinks, graph/local graph, daily notes and templates. That makes it a good companion for Codex because Codex can read and update Markdown without needing the Obsidian app to be open.
 
+Codebase graph MCP tools such as `codebase-memory-mcp` do not replace this workflow. They are better at machine-generated code intelligence such as symbol search, call graphs, route maps, architecture summaries and impact analysis. Obsidian-style notes are better for human project memory: requirements, decisions, why something was chosen, daily context, blockers, research trails and handoff notes.
+
 Claude Code workflows often use persistent instruction files and memory. The Codex equivalent in this starter pack is:
 
 - `AGENTS.md` for durable project rules.
@@ -23,6 +25,7 @@ Use an Obsidian-style knowledge layer when:
 - There are many decisions, blockers, content sources, credentials, hosting steps or QA phases.
 - You need to remember why a decision was made, not only what code changed.
 - You want daily notes or a project diary that can be opened in Obsidian and read by Codex.
+- You use a code-indexing MCP but still need human-readable decisions, blockers and project history.
 
 Skip it for tiny one-file tasks.
 

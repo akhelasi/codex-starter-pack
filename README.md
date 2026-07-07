@@ -18,6 +18,7 @@ These files are not product code. They are working instructions, reusable skills
 - `docs/file-maintenance-guide.md` - what to update in which file and when.
 - `docs/tooling-stability.md` - notes about patch/write stability issues and mitigation.
 - `docs/obsidian-codex-workflow.md` - Obsidian-compatible linked-notes workflow for Codex projects.
+- `docs/codebase-memory-mcp-research.md` - optional Codebase Memory MCP research and install-safety policy for large codebases.
 - `docs/recursive-starter-pack-improvement.md` - process for promoting verified project lessons back into the starter pack.
 - `docs/multi-starter-pack-hub.md` - router plan for web, Binance/trading, Unity/game and future starter packs.
 - `docs/plugin-integration-playbook.md` - plugin/connectors use cases, safety tiers, and multi-agent board patterns.
@@ -77,6 +78,7 @@ Work in this project using AGENTS.md. Review .agents/skills and use only the ski
 - Use `frontend-browser-qa` for UI, CSS, JavaScript, responsive layout, and browser checks.
 - Use `github-pages-manager` for GitHub repositories, GitHub Pages, and static-site deployment.
 - Use `controlled-file-editing` when editing starter-pack docs or when patch operations are slow.
+- Review `docs/codebase-memory-mcp-research.md` before enabling Codebase Memory MCP for large-codebase graph search or impact analysis.
 
 ## MCP Policy
 
