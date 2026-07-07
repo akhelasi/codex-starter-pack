@@ -16,6 +16,12 @@ From the cloned starter pack folder:
 .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project"
 ```
 
+If Windows blocks `.ps1` scripts with an execution policy error, use:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project"
+```
+
 This copies:
 
 - `AGENTS.md`
@@ -30,6 +36,12 @@ To copy focused packs such as `packs/binance-trading/`, run:
 
 ```powershell
 .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
+```
+
+Execution-policy-safe version:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
 ```
 
 The installer is safe to run again. It copies files to their exact target paths and merges starter-pack folders without creating nested folders such as `.agents\.agents`.
@@ -68,6 +80,9 @@ https://github.com/akhelasi/codex-starter-pack
 
 Then run:
 .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\my-project"
+
+If Windows blocks the script, run:
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\my-project"
 ```
 
 For GitHub access on the work computer, tell Codex:

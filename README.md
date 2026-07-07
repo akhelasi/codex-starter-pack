@@ -45,10 +45,22 @@ Copy it into a project:
 .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project"
 ```
 
+If Windows blocks `.ps1` scripts with an execution policy error, run this one-time command instead:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project"
+```
+
 Copy focused packs too when the project should receive `packs/`:
 
 ```powershell
 .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
+```
+
+Execution-policy-safe version:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
 ```
 
 Then tell Codex:

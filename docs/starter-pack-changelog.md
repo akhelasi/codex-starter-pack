@@ -241,6 +241,7 @@ The user wanted the starter pack to explain when plugins such as GitHub, Linear,
 - Added optional `-IncludePacks` support for copying focused packs such as `packs/binance-trading/`.
 - Added a root `.gitignore` for generated outputs, local env files, caches, editor noise, and private trading/runtime data.
 - Updated `README.md` and `docs/clone-and-install.md` to document the new installer behavior.
+- Added execution-policy-safe PowerShell install commands after local verification showed direct `.ps1` execution can be blocked on Windows.
 
 ### Why
 
