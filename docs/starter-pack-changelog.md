@@ -258,3 +258,15 @@ The work-computer clone review found that the installer could nest existing targ
 ### Why
 
 The user found `DeusData/codebase-memory-mcp` and asked whether it could improve the starter pack and whether it makes Obsidian unnecessary. The reviewed policy keeps both: Obsidian-compatible Markdown for durable human-readable context, and Codebase Memory MCP as an opt-in code graph tool for larger projects after review and user approval.
+
+## 2026-07-07 - Optional Memory Tools Installer
+
+- Added `scripts/install-optional-memory-tools.ps1`.
+- Updated `README.md`, `AGENTS.md`, `docs/clone-and-install.md`, `docs/setup-checklist.md`, `docs/obsidian-codex-workflow.md`, and `docs/codebase-memory-mcp-research.md`.
+- The starter pack now has ready commands for installing Obsidian and Codebase Memory MCP when needed.
+- Codebase Memory MCP installs binary-only by default through `--skip-config`; Codex/agent configuration requires the explicit `-ConfigureCodebaseMemory` flag.
+- The third-party binaries are not vendored into the starter-pack repository.
+
+### Why
+
+The user wants the starter pack to be ready even if tool names or links change later, without needing to re-explain Obsidian or Codebase Memory setup. The chosen approach preserves install commands and policy inside the starter pack while avoiding committed third-party executables or automatic sensitive MCP configuration.

@@ -24,6 +24,7 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `.agents/skills/starter-pack-router/SKILL.md`: choose the correct starter pack when web, trading, game or future packs coexist.
 - `.agents/skills/plugin-integration-planner/SKILL.md`: choose project plugins/connectors and multi-agent coordination tools.
 - `.codex/config.example.toml`: example MCP configuration; not active unless copied into real Codex config.
+- `scripts/install-optional-memory-tools.ps1`: optional installer wrapper for Obsidian and Codebase Memory MCP; do not run unless the user asks.
 - `docs/`: setup notes, GitHub/deploy guidance, MCP/security research, and starter-pack history.
 - `docs/senior-codex-engineering-playbook.md`: source-backed senior workflow adapted from Codex and Claude Code practices.
 - `docs/starter-pack-lessons-from-banza.md`: field notes from a long PHP/MySQL village-site build, including handoff, QA, content and tooling lessons.
@@ -47,7 +48,7 @@ Use `.agents/skills/recursive-starter-pack-improvement/SKILL.md` and `docs/recur
 
 ## Sensitive MCP Defaults
 
-Do not install or enable production database MCP, broad filesystem MCP, Codebase Memory MCP, Figma, Sentry, Slack, Drive, Notion, or similar private-workspace MCP servers by default. These are project-specific and sensitive.
+Do not install or enable production database MCP, broad filesystem MCP, Codebase Memory MCP, Figma, Sentry, Slack, Drive, Notion, Obsidian app, or similar private-workspace tools by default. These are project-specific and sensitive.
 
 Enable them only when the active project actually needs them, after checking `docs/skills-mcp-security-review.md` and asking the user for approval. Prefer local/dev/read-only credentials and narrow scopes.
 ## User Profile

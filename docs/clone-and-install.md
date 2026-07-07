@@ -46,6 +46,24 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starte
 
 The installer is safe to run again. It copies files to their exact target paths and merges starter-pack folders without creating nested folders such as `.agents\.agents`.
 
+## Optional Memory Tools
+
+The starter pack includes an optional installer wrapper for Obsidian and Codebase Memory MCP. These tools are not installed by the normal project installer.
+
+Install Obsidian when you want a local UI for Markdown notes:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallObsidian
+```
+
+Install Codebase Memory MCP binary-only when a large codebase needs graph search or impact analysis:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallCodebaseMemory
+```
+
+Configure Codebase Memory MCP with Codex only after reviewing `docs/codebase-memory-mcp-research.md` and approving the config change.
+
 ## Prompt For Codex
 
 After installing into a project, tell Codex:

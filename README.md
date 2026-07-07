@@ -30,6 +30,7 @@ These files are not product code. They are working instructions, reusable skills
 - `templates/agent-coordination-board.md` - Linear/GitHub/Jira/ClickUp board template for multiple Codex agents.
 - `packs/binance-trading/` - Binance and crypto trading bot starter pack with safety-first MCP guidance.
 - `scripts/install-starter-pack.ps1` - installer script for copying the pack into a project.
+- `scripts/install-optional-memory-tools.ps1` - optional installer wrapper for Obsidian and Codebase Memory MCP.
 
 ## Install Into A Project
 
@@ -63,6 +64,15 @@ Execution-policy-safe version:
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
 ```
+
+Install optional memory tools only when needed:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallObsidian
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallCodebaseMemory
+```
+
+The Codebase Memory command installs binary-only by default. Re-run with `-ConfigureCodebaseMemory` only after reviewing `docs/codebase-memory-mcp-research.md`.
 
 Then tell Codex:
 

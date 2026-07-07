@@ -53,6 +53,18 @@ notes/
   90-archive/
 ```
 
+## Optional Obsidian App Install
+
+The Obsidian app is optional. Codex can read and write the same Markdown notes without the app installed.
+
+When the user wants the app ready on a Windows machine, use the starter-pack wrapper:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallObsidian
+```
+
+The wrapper uses the Windows package manager when available. If `winget` is missing, install manually from the official download page.
+
 ## Note Types
 
 - Project index: map of active notes, current status and next action.

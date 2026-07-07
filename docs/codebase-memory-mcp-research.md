@@ -91,7 +91,21 @@ Before installing or enabling it:
 
 Do not run this automatically from the starter pack.
 
-Recommended manual review-first flow:
+Recommended starter-pack wrapper flow:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallCodebaseMemory
+```
+
+This installs Codebase Memory MCP in binary-only mode by default through upstream `--skip-config`. It does not configure Codex automatically.
+
+Configure agent integration only after explicit approval:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallCodebaseMemory -ConfigureCodebaseMemory
+```
+
+Manual review-first flow:
 
 ```powershell
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.ps1 -OutFile install-codebase-memory-mcp.ps1
@@ -100,6 +114,19 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install-codebase-memor
 ```
 
 After binary-only install, configure Codex MCP manually and keep it disabled until needed.
+
+## Why The Binary Is Not Vendored
+
+Do not commit the third-party executable or downloaded installer into this starter pack.
+
+Reasons:
+
+- It would turn the starter pack into a binary supply-chain mirror.
+- The binary would become stale while upstream security fixes continue.
+- Users would lose the ability to verify the current release source, checksums and security notes.
+- GitHub repositories become heavier and harder to audit when executable assets are mixed with docs/templates.
+
+Instead, keep the wrapper script, source links, policy and review steps in the starter pack.
 
 ## Obsidian Comparison
 

@@ -38,7 +38,16 @@
 2. Context7.
 3. Playwright MCP.
 4. GitHub MCP.
-5. Sentry/Figma/database MCP only when a project actually needs them.
+5. Obsidian app only when you want a local notes UI; Codex can use Markdown notes without it.
+6. Codebase Memory MCP only for large or unfamiliar codebases after reviewing `docs/codebase-memory-mcp-research.md`.
+7. Sentry/Figma/database MCP only when a project actually needs them.
+
+Optional memory tooling can be installed from the starter pack:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallObsidian
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-optional-memory-tools.ps1 -InstallCodebaseMemory
+```
 
 ## GitHub Pages Setup
 
