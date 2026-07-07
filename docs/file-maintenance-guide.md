@@ -104,8 +104,17 @@ Change when:
 
 - A repeated setup task should be automated.
 - Manual copy/install steps become error-prone.
+- Installer profiles, bootstrap behavior, optional tool installs, or doctor checks change.
 
-Test scripts after changing them.
+Test scripts after changing them. Prefer `scripts/test-starter-pack.ps1` for starter-pack-level smoke checks.
+
+### `packs/PACK_CONTRACT.md`
+
+Change when:
+
+- The required shape of focused packs changes.
+- New domain packs such as trading, game, data, or security need shared safety defaults.
+- Pack routing or pack-local changelog expectations change.
 
 ## What Can Be Deleted
 

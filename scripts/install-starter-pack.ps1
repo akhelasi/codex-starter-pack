@@ -2,7 +2,10 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$TargetPath,
 
-  [switch]$IncludePacks
+  [switch]$IncludePacks,
+
+  [ValidateSet("WebFull", "WebMinimal", "PhpSql", "Trading")]
+  [string]$Profile = "WebFull"
 )
 
 $sourceRoot = Split-Path -Parent $PSScriptRoot
@@ -48,13 +51,52 @@ function Copy-StarterPackItem {
   Copy-Item -LiteralPath $Source -Destination $Destination -Force
 }
 
-$items = @(
-  "AGENTS.md",
-  ".agents",
-  ".codex",
-  "docs",
-  "templates"
-)
+$items = switch ($Profile) {
+  "WebMinimal" {
+    @(
+      "AGENTS.md",
+      ".agents",
+      ".codex",
+      "docs/setup-checklist.md",
+      "docs/clone-and-install.md",
+      "docs/skills-mcp-security-review.md",
+      "docs/mcp-and-skills-research.md",
+      "templates/task-brief.md",
+      "scripts"
+    )
+  }
+  "PhpSql" {
+    @(
+      "AGENTS.md",
+      ".agents",
+      ".codex",
+      "docs",
+      "templates",
+      "scripts"
+    )
+  }
+  "Trading" {
+    @(
+      "AGENTS.md",
+      ".agents",
+      ".codex",
+      "docs",
+      "templates",
+      "scripts",
+      "packs/binance-trading"
+    )
+  }
+  default {
+    @(
+      "AGENTS.md",
+      ".agents",
+      ".codex",
+      "docs",
+      "templates",
+      "scripts"
+    )
+  }
+}
 
 if ($IncludePacks) {
   $items += "packs"
@@ -67,3 +109,4 @@ foreach ($item in $items) {
 }
 
 Write-Host "Codex starter pack installed to $targetRoot"
+Write-Host "Profile: $Profile"

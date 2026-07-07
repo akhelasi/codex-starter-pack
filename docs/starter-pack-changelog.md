@@ -270,3 +270,18 @@ The user found `DeusData/codebase-memory-mcp` and asked whether it could improve
 ### Why
 
 The user wants the starter pack to be ready even if tool names or links change later, without needing to re-explain Obsidian or Codebase Memory setup. The chosen approach preserves install commands and policy inside the starter pack while avoiding committed third-party executables or automatic sensitive MCP configuration.
+
+## 2026-07-07 - Bootstrap, Doctor, Profiles, And Pack Contract
+
+- Updated `scripts/install-starter-pack.ps1` so `scripts/` is copied by default.
+- Added install profiles: `WebFull`, `WebMinimal`, `PhpSql`, and `Trading`.
+- Added `scripts/new-project-bootstrap.ps1` for creating project checklist, worklog, task brief, continuation prompt, evidence matrix, optional Obsidian-style notes, browser QA report, and PHP/SQL templates.
+- Added `scripts/test-starter-pack.ps1` as a local starter-pack doctor and smoke test.
+- Added `templates/browser-qa-report.md`.
+- Added `templates/php-sql/env-example.md`, `templates/php-sql/migration-plan.md`, and `templates/php-sql/backup-restore-checklist.md`.
+- Added `packs/PACK_CONTRACT.md` for future focused packs such as Unity/game, data, security, or additional trading packs.
+- Updated `README.md`, `AGENTS.md`, `docs/clone-and-install.md`, `docs/setup-checklist.md`, and `docs/file-maintenance-guide.md`.
+
+### Why
+
+The starter pack had enough useful docs and scripts that onboarding risk moved from missing guidance to inconsistent setup. In particular, docs referenced `scripts/install-optional-memory-tools.ps1`, but the project installer did not copy `scripts/` into target projects. The new bootstrap and doctor scripts make future project starts more repeatable and make starter-pack regressions easier to catch before pushing.

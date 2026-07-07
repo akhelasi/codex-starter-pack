@@ -4,25 +4,26 @@
 
 1. Copy `AGENTS.md` into the project root.
 2. Copy `.agents/skills` into the project root if you want these workflows available inside that repository.
-3. Add project-specific commands to `AGENTS.md`, for example:
+3. Run `scripts/new-project-bootstrap.ps1` for multi-phase projects, PHP/SQL projects, or projects that need handoff files.
+4. Add project-specific commands to `AGENTS.md`, for example:
    - `npm run build`
    - `npm test`
    - `composer test`
    - `php -l`
-4. Add database safety notes:
+5. Add database safety notes:
    - local DB name
    - migration command
    - seed command
    - production DB warning
-5. For multi-phase projects, add:
+6. For multi-phase projects, add:
    - project checklist
    - project worklog
    - local handoff command
    - completion evidence matrix
    - continuation prompt for future Codex sessions
    - agent coordination board if multiple Codex threads/agents will work in parallel
-6. If external tools matter, create `docs/plugin-integration-plan.md` from `templates/plugin-integration-plan.md`.
-7. Mark unavailable client/host/provider items as `WAITING` instead of treating them as code bugs.
+7. If external tools matter, create `docs/plugin-integration-plan.md` from `templates/plugin-integration-plan.md`.
+8. Mark unavailable client/host/provider items as `WAITING` instead of treating them as code bugs.
 
 ## Personal Codex Setup
 
@@ -77,6 +78,12 @@ For long Codex-built websites, create these early:
 - `docs/project-worklog.md` from `templates/project-worklog.md`
 - `docs/completion-evidence-matrix.md` from `templates/completion-evidence-matrix.md`
 - `docs/codex-continuation-prompt.md` from `templates/codex-continuation-prompt.md`
+
+Recommended bootstrap command:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\new-project-bootstrap.ps1 -TargetPath "D:\path\to\your-project" -ProjectType PhpSql -CreateNotes -IncludeBrowserQa
+```
 
 Recommended status labels:
 

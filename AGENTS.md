@@ -24,6 +24,9 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `.agents/skills/starter-pack-router/SKILL.md`: choose the correct starter pack when web, trading, game or future packs coexist.
 - `.agents/skills/plugin-integration-planner/SKILL.md`: choose project plugins/connectors and multi-agent coordination tools.
 - `.codex/config.example.toml`: example MCP configuration; not active unless copied into real Codex config.
+- `scripts/install-starter-pack.ps1`: copies this starter pack into a project; supports install profiles.
+- `scripts/new-project-bootstrap.ps1`: creates project checklist, worklog, handoff, evidence, notes, and domain templates.
+- `scripts/test-starter-pack.ps1`: starter-pack doctor and smoke test.
 - `scripts/install-optional-memory-tools.ps1`: optional installer wrapper for Obsidian and Codebase Memory MCP; do not run unless the user asks.
 - `docs/`: setup notes, GitHub/deploy guidance, MCP/security research, and starter-pack history.
 - `docs/senior-codex-engineering-playbook.md`: source-backed senior workflow adapted from Codex and Claude Code practices.
@@ -34,6 +37,7 @@ When this pack is copied into a real project, treat these files as guidance unle
 - `docs/multi-starter-pack-hub.md`: plan for using web, Binance/trading, Unity/game and future packs together.
 - `docs/plugin-integration-playbook.md`: when and how to use GitHub, Linear, Drive, Figma, Vercel, Supabase, Slack and other plugins.
 - `packs/binance-trading/`: Binance and crypto trading bot starter pack. Use only for trading/API/backtest/risk tasks.
+- `packs/PACK_CONTRACT.md`: required shape and safety defaults for focused starter packs.
 - `templates/`: reusable project instruction and task brief templates.
 - `outputs/`: generated experiments and test projects; do not copy into real projects unless requested.
 
@@ -71,6 +75,7 @@ Enable them only when the active project actually needs them, after checking `do
 - Treat client content, hosting, credentials, external providers, production database access, and manual QA as explicit `WAITING` blockers when they are not available.
 - Prefer one safe local handoff command when a project grows large; keep destructive, production, migration, or host-only checks behind explicit flags.
 - If a large multi-file `apply_patch` or documentation edit appears stuck, treat patch size/tooling as the likely issue first, report status, then continue with small one-file or one-section patches and verify each edit.
+- After changing starter-pack scripts, installer behavior, templates, pack routing, or MCP policy, run `scripts/test-starter-pack.ps1` when possible.
 
 ## Web Frontend Rules
 

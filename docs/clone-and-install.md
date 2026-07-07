@@ -29,6 +29,7 @@ This copies:
 - `.codex`
 - `docs`
 - `templates`
+- `scripts`
 
 It does not copy focused packs or generated experiments from `outputs` by default.
 
@@ -45,6 +46,29 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starte
 ```
 
 The installer is safe to run again. It copies files to their exact target paths and merges starter-pack folders without creating nested folders such as `.agents\.agents`.
+
+## Install Profiles
+
+Use profiles when the project type is known:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -Profile WebFull
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -Profile WebMinimal
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -Profile PhpSql
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -Profile Trading
+```
+
+`WebFull` is the default. `Trading` copies `packs/binance-trading/`. The old `-IncludePacks` flag still works when all focused packs should be copied.
+
+## Bootstrap Project Files
+
+After the starter pack is installed into a project, create project tracking files:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\new-project-bootstrap.ps1 -TargetPath "D:\path\to\your-project" -ProjectType PhpSql -CreateNotes -IncludeBrowserQa
+```
+
+This creates reusable project docs such as checklist, worklog, continuation prompt, completion evidence matrix, task brief, optional Obsidian-style notes, browser QA report, and PHP/SQL templates. Existing files are not overwritten unless `-Force` is passed.
 
 ## Optional Memory Tools
 
@@ -84,7 +108,7 @@ First check whether Git, Node.js, npm/npx, GitHub CLI, and Codex CLI are availab
 
 Then clone the starter pack and install it into the project I am working on.
 
-Use AGENTS.md and .agents/skills. Use only the skill, MCP server, or tool needed for the current task. Do not install or enable sensitive MCP servers such as production database, broad filesystem, Figma, Sentry, Slack, Drive, or Notion without my approval.
+Use AGENTS.md and .agents/skills. Use only the skill, MCP server, or tool needed for the current task. Do not install or enable sensitive tools such as production database MCP, broad filesystem MCP, Codebase Memory MCP, Obsidian app, Figma, Sentry, Slack, Drive, or Notion without my approval.
 ```
 
 If the project folder already exists, say:

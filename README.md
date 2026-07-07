@@ -28,8 +28,13 @@ These files are not product code. They are working instructions, reusable skills
 - `templates/starter-pack-improvement-note.md` - capture format for reusable improvement candidates.
 - `templates/plugin-integration-plan.md` - project-level plan for selected plugins/connectors and approvals.
 - `templates/agent-coordination-board.md` - Linear/GitHub/Jira/ClickUp board template for multiple Codex agents.
+- `templates/browser-qa-report.md` - reusable browser QA evidence report.
+- `templates/php-sql/` - PHP/SQL environment, migration, backup and restore templates.
 - `packs/binance-trading/` - Binance and crypto trading bot starter pack with safety-first MCP guidance.
+- `packs/PACK_CONTRACT.md` - required shape and safety defaults for future focused packs.
 - `scripts/install-starter-pack.ps1` - installer script for copying the pack into a project.
+- `scripts/new-project-bootstrap.ps1` - creates project checklist, worklog, handoff, evidence, notes, and domain templates.
+- `scripts/test-starter-pack.ps1` - local starter-pack doctor and smoke test.
 - `scripts/install-optional-memory-tools.ps1` - optional installer wrapper for Obsidian and Codebase Memory MCP.
 
 ## Install Into A Project
@@ -65,6 +70,25 @@ Execution-policy-safe version:
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -IncludePacks
 ```
 
+Choose an install profile when useful:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -Profile PhpSql
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-starter-pack.ps1 -TargetPath "D:\path\to\your-project" -Profile Trading
+```
+
+After installing into a project, bootstrap project tracking files:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\new-project-bootstrap.ps1 -TargetPath "D:\path\to\your-project" -ProjectType PhpSql -CreateNotes -IncludeBrowserQa
+```
+
+Check the starter pack itself:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\test-starter-pack.ps1
+```
+
 Install optional memory tools only when needed:
 
 ```powershell
@@ -96,7 +120,7 @@ Keep MCP usage conservative:
 
 - Good defaults: OpenAI Docs, Context7, Playwright/browser.
 - Enable when needed: GitHub, Chrome DevTools, Fetch.
-- Sensitive: database, filesystem, Figma, Sentry, Slack, Drive, Notion.
+- Sensitive: database, filesystem, Codebase Memory, Obsidian app, Figma, Sentry, Slack, Drive, Notion.
 
 Use prompt approvals, read-only modes, and narrow toolsets when possible. Do not commit tokens or secrets.
 
